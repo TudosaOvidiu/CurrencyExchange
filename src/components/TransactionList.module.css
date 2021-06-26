@@ -1,0 +1,35 @@
+.date {
+  color: gray;
+  margin-block-end: 4px;
+}
+
+.listItem {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.iconContainer {
+  width: 40px;
+  height: 40px;
+  margin-inline-end: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: lightgrey;
+  color: #848080;
+}
+
+.currencyContainer {
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.smallGrayText {
+  font-size: 12px;
+  color: darkgray;
+}

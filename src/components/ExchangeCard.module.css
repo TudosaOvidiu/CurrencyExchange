@@ -1,0 +1,38 @@
+.card {
+  margin-block-end: 16px;
+}
+
+.card > div {
+  display: flex;
+}
+
+.contentContainer {
+  display: flex;
+  width: 100%;
+}
+
+.inputContainer {
+  margin-left: auto;
+}
+
+.select {
+  width: 75px;
+  border: 0;
+  cursor: pointer;
+}
+
+.select > div {
+  box-shadow: none !important;
+}
+
+.greyText {
+  color: darkgrey;
+}
+
+.input {
+  border-radius: 8px;
+}
+
+.error {
+  color: #bd061e;
+}

@@ -1,0 +1,9 @@
+.detailsContainer {
+  margin-block-start: 32px;
+}
+
+.textColor {
+  color: #0566eb;
+  font-weight: 400;
+  margin-block-end: 4px;
+}
