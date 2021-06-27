@@ -12,8 +12,8 @@ const ExchangePage = () => {
     baseCurrencyName,
     buyCurrency,
     currencies,
-    handleBaseAmountInput,
-    handleBuyingAmountInput,
+    onBaseBaseAmountInputChange,
+    onBuyingAmountInputChange,
     inputValues,
     onBaseCurrencySelect,
     onCurrencySelect,
@@ -50,9 +50,9 @@ const ExchangePage = () => {
         baseCurrencyName={baseCurrencyName}
         buyCurrency={buyCurrency}
         currencies={currencies}
-        handleBaseAmountInput={handleBaseAmountInput}
+        handleBaseAmountInput={onBaseBaseAmountInputChange}
         handleBaseCurrencySelect={onBaseCurrencySelect}
-        handleBuyingAmountInput={handleBuyingAmountInput}
+        handleBuyingAmountInput={onBuyingAmountInputChange}
         handleCurrencySelection={onCurrencySelect}
         inputValues={inputValues}
         isBalanceExceeded={isBalanceExceeded}
