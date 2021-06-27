@@ -18,10 +18,10 @@ interface UseExchangePanelReturn {
   baseCurrencyName: string;
   buyCurrency: Currency;
   currencies: string[];
-  handleBaseAmountInput: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  handleBuyingAmountInput: (e: React.ChangeEvent<HTMLInputElement>) => void;
   inputValues: InputValues;
+  onBaseBaseAmountInputChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   onBaseCurrencySelect: (currencyName: string) => void;
+  onBuyingAmountInputChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   onCurrencySelect: (currencyName: string) => void;
   rates: Record<string, number>;
   setIsBuyingInputFocused: React.Dispatch<React.SetStateAction<boolean>>;
@@ -116,7 +116,7 @@ const useExchangePanel: UseExchangePanelHook = () => {
     refreshApp();
   }, 10000);
 
-  const handleBaseAmountInput = (
+  const onBaseBaseAmountInputChange = (
     e: React.ChangeEvent<HTMLInputElement>
   ): void => {
     const inputValue = e.target.value;
@@ -142,7 +142,7 @@ const useExchangePanel: UseExchangePanelHook = () => {
     });
   };
 
-  const handleBuyingAmountInput = (
+  const onBuyingAmountInputChange = (
     e: React.ChangeEvent<HTMLInputElement>
   ): void => {
     const inputValue = e.target.value;
@@ -202,10 +202,10 @@ const useExchangePanel: UseExchangePanelHook = () => {
   return {
     baseCurrencyName,
     currencies,
-    handleBaseAmountInput,
-    handleBuyingAmountInput,
     inputValues,
+    onBaseBaseAmountInputChange,
     onBaseCurrencySelect,
+    onBuyingAmountInputChange,
     onCurrencySelect,
     rates,
     buyCurrency,
@@ -214,3 +214,4 @@ const useExchangePanel: UseExchangePanelHook = () => {
 };
 
 export default useExchangePanel;
+
