@@ -1,6 +1,6 @@
 # Currency Exchange App
 
-The entry point of the aplications is from the point of view of an user with 3 accounts with following balances:
+The entry point of the aplications is from the point of view of an user with 3 accounts with the following balances:
   * USD: 500
   * EUR: 400
   * GBP: 300
