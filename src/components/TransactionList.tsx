@@ -51,4 +51,5 @@ const TransactionList: React.FC<TransactionListProps> = ({ transactions }) => {
   );
 };
 
-export default TransactionList;
+export default React.memo(TransactionList);
+
