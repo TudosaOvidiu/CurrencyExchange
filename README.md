@@ -11,7 +11,7 @@ From here you can make exchanges between diffrent currencies as long as the amou
 To be able to run the app:
   - first you need an API Key from [CurrencyFreaks](https://currencyfreaks.com/ "CurrencyFreaks link title")
   - create a .env file with a variable ```REACT_APP_API_KEY=YOUR_CURRENCYFREAKS_KEY``` (copy .env.sample)
-  - run ```npm instal```
+  - run ```npm install```
   - run ```npm start```
 
 
